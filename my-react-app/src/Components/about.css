@@ -1,0 +1,94 @@
+.about-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+}
+
+/* Profile Image */
+.image-2 img {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Description Block */
+.description {
+  max-width: 650px;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.description h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.description p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Social + Resume Wrapper */
+.social-resume-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Resume Button */
+.resume-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button button:hover {
+  background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .social-resume-wrapper {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
