@@ -40,10 +40,50 @@
 .read-the-docs {
   color: #888;
 }
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* adjust to navbar height */
+
+/* Reset and layout base */
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button {
+  max-width: 100%;
+}
+.section-class-name {
+  padding: 3rem 1rem;     /* or 0 if you want edge-to-edge */
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Make sure containers stretch fully */
+/* section,
+div,
+nav,
+footer {
+  width: 100%;
+} */
+
+/* html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+} */
 /* * Reset default margin/padding */
 /* * {
   margin: 0;
