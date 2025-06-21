@@ -16,7 +16,7 @@ function Projects() {
 
         <div className="project-card-2">
           <img src="Employee.png" alt="Employee Management System" />
-          <a href="https://github.com/yourusername/employee-project" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/madhanpitchaimani/HRMS.git" target="_blank" rel="noopener noreferrer">
             <button>GitHub</button>
           </a>
         </div>

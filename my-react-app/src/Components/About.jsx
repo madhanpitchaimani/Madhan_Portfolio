@@ -25,7 +25,7 @@ function About() {
           </div>
 
           <div className="resume-button">
-            <a href="/Madhan P Resume.pdf" download>
+            <a href="resume.pdf" download>
               <button>Download Resume</button>
             </a>
           </div>
