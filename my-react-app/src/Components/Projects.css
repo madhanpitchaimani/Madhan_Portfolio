@@ -1,6 +1,7 @@
 .projects-container {
-  padding: 40px;
+  padding: 40px 20px;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .projects-title {
@@ -9,87 +10,85 @@
   color: #333;
 }
 
-/* Project Cards Layout */
+/* Cards Layout */
 .project-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
-/* Individual Project Card */
-.project-card-1 {
+/* Shared Card Style */
+.project-card-1,
+.project-card-2 {
   background: white;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 10px 10px orange;
-  width: 100%;
-  max-width: 400px; /* control width for each column */
+  width: calc(50% - 20px);
+  min-width: 260px;
+  max-width: 400px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+}
+
+/* Distinct Shadows */
+.project-card-1 {
+  box-shadow: 0 10px 10px orange;
 }
 .project-card-2 {
-  background:white;
-  padding: 20px;
-  border-radius: 20px;
   box-shadow: 0 10px 10px aqua;
-  width: 100%;
-  max-width: 400px; /* control width for each column */
-  transition: transform 0.3s ease;
 }
-.project-card:hover {
+
+/* Hover */
+.project-card-1:hover,
+.project-card-2:hover {
   transform: translateY(-5px);
 }
 
 /* Image Styling */
-.project-card-1 img {
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  margin-bottom: 20px;
-}
+.project-card-1 img,
 .project-card-2 img {
   width: 100%;
   height: auto;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-/* GitHub Button */
-.project-card-1 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: 2px solid orange;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+
+/* Buttons */
+.project-card-1 button,
 .project-card-2 button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: white;
   color: black;
-  border: 2px solid blue;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
+
+.project-card-1 button {
+  border: 2px solid orange;
+}
+
+.project-card-2 button {
+  border: 2px solid blue;
+}
+
 .project-card-1 button:hover {
   background-color: antiquewhite;
   color: black;
 }
+
 .project-card-2 button:hover {
   background-color: blue;
   color: white;
 }
-/* Responsive Layout: Column on small screens */
-@media (max-width: 768px) {
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .project-card {
-    width: 90%;
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+  .project-card-1,
+  .project-card-2 {
+    width: 100%;
+    max-width: 90%;
   }
 }

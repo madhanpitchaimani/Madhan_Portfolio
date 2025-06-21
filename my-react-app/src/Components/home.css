@@ -3,16 +3,15 @@
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  flex-wrap: wrap;
   background-color: #fff;
 }
 
 .image-1 {
   display: flex;
-  align-items: center;
-  gap: 100px;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row; /* Default: image left, content right */
 }
 
 .image-1 img {
@@ -23,8 +22,8 @@
 }
 
 .content {
-  margin-top: 20px;
-  text-align: center;
+  text-align: left;
+  max-width: 400px;
 }
 
 .content h3 {
@@ -62,11 +61,15 @@
   color: white;
 }
 
-/* 📱 Responsive Styles */
+/* 📱 Mobile Responsive */
 @media (max-width: 768px) {
   .image-1 {
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column; /* Stack vertically on mobile */
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
   }
 
   .content h1 {

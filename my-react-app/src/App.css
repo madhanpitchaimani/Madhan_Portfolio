@@ -45,15 +45,15 @@ html {
   scroll-padding-top: 80px; /* adjust to navbar height */
 }
 /* * Reset default margin/padding */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* Ensure body takes full width and height */
- body {
+ /* body {
   width: 100%;
   font-family: sans-serif;
   scroll-behavior: smooth;
-} 
+}  */

@@ -1,21 +1,28 @@
-/* --- Base Page & Layout (unchanged) --- */
+/* === Education Page === */
 .education-page {
-  padding: 2rem;
+  padding: 2rem 1rem;
   background-color: #f8f9fa;
-  max-width: 1200px;
-  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh; /* ensures full screen height */
 }
 
+/* === Education & Experience Container === */
 .education-experience-container {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* === Timeline Section === */
 .timeline-section {
   flex: 1;
   min-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .timeline-section h2 {
@@ -25,10 +32,12 @@
   text-align: center;
 }
 
+/* === Timeline Items === */
 .timeline {
   position: relative;
   padding-left: 25px;
   border-left: 3px solid #000;
+  box-sizing: border-box;
 }
 
 .timeline-item {
@@ -37,7 +46,7 @@
   background: white;
   margin-bottom: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -72,7 +81,7 @@
   padding-left: 1.2rem;
 }
 
-/* --- Skills Section (Styled Like the Image) --- */
+/* === Skills Section === */
 .skills-heading {
   text-align: center;
   font-size: 2rem;
@@ -86,17 +95,20 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skill-box {
-  width: 260px;
-  background-color: white;
+  width: 100%;
+  max-width: 260px;
   border: 2px solid black;
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 20px 10px black;
   transition: transform 0.3s ease;
+  background: #fff;
 }
 
 .skill-box:hover {
@@ -123,14 +135,14 @@
   line-height: 1.4;
 }
 
-/* --- Responsive --- */
+/* === Responsive Styles === */
 @media (max-width: 768px) {
   .education-experience-container {
     flex-direction: column;
   }
 
   .timeline {
-    padding-left: 15px;
+    padding-left: 20px;
     margin-left: 10px;
   }
 
@@ -143,5 +155,3 @@
     align-items: center;
   }
 }
-
-
