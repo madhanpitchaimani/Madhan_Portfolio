@@ -59,13 +59,13 @@ body {
 button {
   max-width: 100%;
 }
-.section-class-name {
-  padding: 3rem 1rem;     /* or 0 if you want edge-to-edge */
+/* .section-class-name {
+  padding: 3rem 1rem;                   or 0 if you want edge-to-edge
   margin: 0;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-}
+} */
 
 
 /* Make sure containers stretch fully */
