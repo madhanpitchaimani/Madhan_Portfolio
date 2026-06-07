@@ -4,21 +4,33 @@ import './Projects.css';
 function Projects() {
   return (
     <div className="projects-container" id='projects'>
-      <h1 className="projects-title">My Projects</h1>
+      <h1 className="projects-title">Featured Projects</h1>
 
       <div className="project-cards">
-        <div className="project-card-1">
-          <img src="project1.png" alt="Project 1" />
-          <a href="https://github.com/madhanpitchaimani/Hyper-Launch-Project.git" target="_blank" rel="noopener noreferrer">
-            <button>GitHub</button>
-          </a>
+        <div className="project-card">
+          <div className="project-image">
+            <img src="project1.png" alt="Hyper Launch Project" />
+          </div>
+          <div className="project-info">
+            <h3>Hyper Launch Project</h3>
+            <p>A dynamic web application highlighting responsive UI and components.</p>
+            <a href="https://github.com/madhanpitchaimani/Hyper-Launch-Project.git" target="_blank" rel="noopener noreferrer">
+              <button>View on GitHub</button>
+            </a>
+          </div>
         </div>
 
-        <div className="project-card-2">
-          <img src="Employee.png" alt="Employee Management System" />
-          <a href="https://github.com/madhanpitchaimani/HRMS.git" target="_blank" rel="noopener noreferrer">
-            <button>GitHub</button>
-          </a>
+        <div className="project-card">
+          <div className="project-image">
+            <img src="music.png" alt="Music Concert Platform" />
+          </div>
+          <div className="project-info">
+            <h3>Music Concert</h3>
+            <p>A dynamic platform for exploring and reserving music concerts.</p>
+            <a href="https://github.com/madhanpitchaimani/Music-Concert.git" target="_blank" rel="noopener noreferrer">
+              <button>View on GitHub</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
